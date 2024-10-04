@@ -1,0 +1,100 @@
+Last login: Thu Oct  3 11:54:49 on ttys000
+luisras@Luiss-MacBook-Pro ~ % python3
+Python 3.9.6 (default, Feb  3 2024, 15:58:28) 
+[Clang 15.0.0 (clang-1500.3.9.4)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> name = "Luis"
+>>> 
+>>> print(name[1])
+u
+>>> print(name[2:4])
+is
+>>> print(name[:4])
+Luis
+>>> print(name[3:])
+s
+>>> print(name[-1])
+s
+>>> print(name[1] + name[4:])
+u
+>>> name[0] = "X"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> test = "this is a simple string to practice on"
+>>> test.count("s")
+4
+>>> test.count("is")
+2
+>>> test = test.replace("string", "character sequence")
+>>> test
+'this is a simple character sequence to practice on'
+>>> test[10:16]
+'simple'
+>>> test.find("a")
+8
+>>> test.find("a",10)
+19
+>>> test.split()
+['this', 'is', 'a', 'simple', 'character', 'sequence', 'to', 'practice', 'on']
+>>> test.split("character")
+['this is a simple ', ' sequence to practice on']
+>>> test.split("s")
+['thi', ' i', ' a ', 'imple character ', 'equence to practice on']
+>>> test.split("s", 3)
+['thi', ' i', ' a ', 'imple character sequence to practice on']
+>>> words = test.split()
+>>> words
+['this', 'is', 'a', 'simple', 'character', 'sequence', 'to', 'practice', 'on']
+>>> " ".join(words)
+'this is a simple character sequence to practice on'
+>>> "..."join(words)
+  File "<stdin>", line 1
+    "..."join(words)
+         ^
+SyntaxError: invalid syntax
+>>> "...".join(words)
+'this...is...a...simple...character...sequence...to...practice...on'
+>>> test.upper()
+'THIS IS A SIMPLE CHARACTER SEQUENCE TO PRACTICE ON'
+>>> test.lower()
+'this is a simple character sequence to practice on'
+>>> test.lower().capitalize()
+'This is a simple character sequence to practice on'
+>>> test.title()
+'This Is A Simple Character Sequence To Practice On'
+>>> "UPPER".isupper()
+True
+>>> "UPer".isupper()
+False
+>>> "lower".islower()
+True
+>>> "isLOWER".islower()
+False
+>>> "qwerty123".isalnum()
+True
+>>> "qwerty@£$%^&123".isalnum()
+False
+>>> "letters".isalpha()
+True
+>>> "letters123".isalpha()
+False
+>>> "let ters".isalpha()
+False
+>>> "1234".isdigit()
+True
+>>> "12345abc".isdigit()
+False
+>>> "   ".isspace()
+True
+>>> "a   b".isspace()
+False
+>>> "A string".ljust(15)
+'A string       '
+>>> "A string".rjust(15)
+'       A string'
+>>> "A string".center(15)
+'    A string   '
+>>> "   A String        ".strip()
+'A String'
+>>> 

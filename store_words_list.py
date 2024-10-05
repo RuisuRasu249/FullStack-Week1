@@ -40,3 +40,17 @@ for _ in range(50):
 letters = "abcdefghijklmnopqrstuvwxyz"
 for i in range(26):
     print(letters[i], words_list[i], '\n')
+
+# can search for a max of 3 words
+for _ in range(3):
+    # create a search word input
+    search_word = input("Enter a word to search for >> ")
+    # search the initial letter of that word
+    # which list the word might be in 
+    # calculate the list index
+    # by taking the ASCII value of the initial letter and 
+    # subtracting the ASCII value of lowercase 'a'
+    if search_word in words_list[ord(search_word[0]) - ord('a')]:
+        print("FOUND")
+    else:
+        print("NOT FOUND")

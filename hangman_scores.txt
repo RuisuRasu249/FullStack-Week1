@@ -1,2 +1,5 @@
-Luis, 30
+Luis,66
 vegeta, 12
+Krillin,18
+Goku,24
+Vegeta,54
